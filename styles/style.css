@@ -7,20 +7,36 @@
     --font-color: #ffff;
     --font-size: 1.3rem;
 }
-.landing{
+/* .landing{
     background-image: url(../assest/building-landing.jpg); 
     background-position: center center;
     background-size: cover;
-}
+} */
 .logo{
     color: var(--special-color);
     text-decoration: none;
     font-size: var(--font-size);
 }
+header span{
+    color: var(--special-color);
+}
 h1{
     color: var(--font-color);
+    position: absolute;
+    right: 15%;
+    align-items: center;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: var(--bs-carousel-caption-color);
+    text-align: center;
 }
 section{
-    margin: 10px 0;
-    background-color: var(--secondary-color);
+    margin: 20px 0;
+    padding: 20px 0;
+}    
+h2, h3{
+    color: var(--special-color);
+    font-size: var(--font-size);
 }
+   
