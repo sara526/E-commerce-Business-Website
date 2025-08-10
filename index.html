@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icons" href="assest/home.png">
+    <link rel="icon" type="image/x-icon" href="./assest/image.png">
     <link rel="stylesheet" href="styles/bootStrap5/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icons" href="assest/home.png">
     <title>HOUSEDECO</title>
+
 </head>
-<body>      
+<body>
     <!--  Strat navigation bar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="logo" href="#">Homedeco</a>
+            <a class="navbar-brand" href="#">
+                <img src="./assest/logofur.jpg" alt="logo" width="100" height="100" class="rounded-circle">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">About Us</a></li>
                             <li><hr class="dropdown-divider"></li>
@@ -34,115 +39,131 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="#">Products</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Pricing</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Projects</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Projects Details</a></li>
+                            <li><a class="dropdown-item" href="#">Project details</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link" href="#contact-us">Contact</a>
                     </li>
-                </ul>
+                </ul>    
             </div>
         </div>
-    </nav>
+    </nav>      
     <!-- End Navbar -->
-    <!-- Start Header 'carousel slide'-->
+
+    <!-- Start Header 'carousel slide with caption'-->
     <header class="landing">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assest/building-landing.jpg" class="d-block w-100" alt="furniture">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4><span>INOVATIVE</span> IDEAS FOR YOUR <span>STYLE</span></h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assest/apartment.jpg" class="d-block w-100" alt="furniture">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><span>Amet</span> consectetur <span>adipisicing!</span></h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assest/interior-landing.jpg" class="d-block w-100" alt="furniture">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-cap">Lorem ipsum dolor sit, amet conm adipisicing elit.</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assest/building-landing.jpg" class="d-block w-100" alt="furniture">
-                <div class="carousel-caption d-none d-md-block">
-                    <h4><span>INOVATIVE</span> IDEAS FOR YOUR <span>STYLE</span></h4>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assest/apartment.jpg" class="d-block w-100" alt="furniture">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: black;">Second slide label</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assest/building-landing.jpg" class="d-block w-100" alt="furniture">
-                <div class="carousel-caption d-none d-md-block">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
     </header>
     <!-- End 'carousel slide'-->
     <!-- start 'Welcome' section -->
-    <section>
-        <div class="container">
+    <section style="background: #e1e1de;">
+        <div class="container mt-5">
             <div class="row d-flex col-12">
-                <div class="col-6">
+                <div class=" row col-md-4">
+                    <img src="assest/apartment-living.jpg" alt="furniture-table" class=" w-100">
+                    <div class="col-md-12 mt-1">
+                        <img src="assest/apartment.jpg" alt="furniture-table" class=" w-100">
+                    </div>
+                </div>
+                <div class="col-md-4">
                     <h2>WELCOME TO HOUSEDECO</h2>
                     <h3>INTERIOR DESIGN</h3>
                     <p>Quas dolor odit impedit voluptates Lorem ipsum dolor sitadg elit, impedit vero accusamus nisi ex molestias ullam officia sed! Id enim dignissimos voluptas officia vitae tempora?</p>
                     <h3>INNOVATIVE</h3>
-                    <p>Odit Unde atae sed aspernatur nulla odio sit optio quaerat inventore aut quam?</p>
-                    <p>Odit Unde atae sed aspernatur nulla odio sit optio quaerat inventore aut quam?</p>
+                    <p>Odit Unde atae sed asper nulla odio sit optio quaerat inve ntore aut quam?</p>
+                    <p>Odit Unde atae sed natur nulla odio sit optio quaerat inventore aut quam?</p>
                 </div>
-                <div class="row col-5 g-1">
-                    <img src="assest/living-room.jpg" alt="furniture-table" class=" w-100"> 
-                     <img src="assest/apartment-living.jpg" alt="furniture-table" class=" w-100"> 
+                <div class="row col-md-4">
+                    <img src="assest/living-room.jpg" alt="furniture-table" class=" w-100">            
                 </div>
             </div>
         </div>
     </section>
+    <!-- End 'Welcome' Section -->
     <!-- Start 'WE GAVE THE BEST' section -->
     <section class="container">
-        <!-- <div class="container bg-success"> -->
-            <div class="row d-flex g-2 col-12">
-                <div class="col-4">
+            <div class="row p-0 m-0">
+                <div class="col-md-3">
                     <h3>WE GAVE THE BEST</h3>
-                    <p class="col-3">Sunt molestias nulla dolore possimus modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestias nulla dolore possimus modi! Dolorum. ipsum dolor sit amet consectetur adipisicing elit. Odit doloremque iure ut commodi tempora magnam porro excepturi deleniti est vel.</p>
-                    <img src="assest/chair-5.jpg" alt="chair" class="w-100 col-4">
+                    <p>Sunt nulla dolore possimus modi! Lorem ipsum dolor sit amet, cons sicing elit. Sunt mtias nulla dolore modi! Dolorum nulla dolore ipsum dolor sit amet conse pisicing elit. Odit dolor emque iure ut commodi tempora magnam porro excepturi deleniti est vel.</p>
+                </div>               
+                <div class="col-md-5">
+                    <img src="assest/indoor.jpg" alt="chair" class="w-100" >
                 </div>
-                
-                <div class="row col-7 d-flex">
-                    <img src="assest/indoor.jpg" alt="chair" class="w-100 col-7" >
-                </div>
-                <div class="row d-flex g-1" >
-                    <img src="assest/armchair.jpg" alt="armchair" class="col-4">
-                    <img src="assest/chair1.jpg" alt="chair">
+                <div class="row col-md-4 ">
+                    <div class="col-md-7">
+                        <img src="assest/chair-5.jpg" alt="chair" class="w-100">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assest/chair-3.jpg" alt="chair" class="w-100 h-100">
+                    </div> 
+                    <div class="row pt-2">
+                        <div class="col-md-12 p-2">
+                            <img src="assest/chair1.jpg" alt="chair" class="w-100">
+                        </div>     
+                    </div>               
                 </div>
             </div>
-        <!-- </div> -->
     </section>
 
-    <!-- Carousel wrapper -->
+    <!-- start Carousel video -->
     <section>
         <div id="carouselVideoExample" data-mdb-carousel-init class="carousel slide carousel-fade"data-mdb-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators" >
+        <!-- Indicators Not Working!! -->
+        <!-- <div class="carousel-indicators" >
             <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="0"class="active" aria-current="true"  aria-label="Slide 1"></button>
             <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample"
                 data-mdb-slide-to="1"
@@ -152,39 +173,36 @@
                 data-mdb-slide-to="2"
                 aria-label="Slide 3">
             </button>
-        </div>
-        <!-- Inner -->
-        <div class="carousel-inner">
-            <!-- Single item -->
+        </div> -->
+        <div class="carousel-inner ">
             <div class="carousel-item active">
-                <video class="img-fluid" autoplay loop muted>
-                    <source src="assest/video/15857232-uhd_3840_2160_30fps.mp4" type="video/mp4" />
-                </video>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>House Deco</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-            </div>
-            <!-- Single item -->
-            <div class="carousel-item">
-                <video class="img-fluid" autoplay loop muted>
+                <video class="img-fluid" autoplay muted>
                     <source src="assest/video/4231455-hd_1920_1080_25fps2.mp4" type="video/mp4" />
                 </video>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
+                    <h4 style="color: #F8B259;">HouseDeco</h4>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+        
+            <div class="carousel-item">
+                <video class="img-fluid" muted>
+                    <source src="assest/video/15857232-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cursus magna vel que nisl</h5>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                 </div>
             </div>    
-            <!-- Single item -->
             <div class="carousel-item">
-                <video class="img-fluid" autoplay loop muted>
-                    <source src="assest/video/15857232-uhd_3840_2160_30fps.mp4" type="video/mp4"/>
+                <video class="img-fluid" muted>
+                    <source src="assest/video/4231455-hd_1920_1080_25fps2.mp4" type="video/mp4"/>
                 </video>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h5>Cursus magna vel que nisl</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur</p>
                 </div>
             </div>
         </div>
@@ -200,40 +218,42 @@
         </div>  
         <!-- End Carousel Slides -->
     </section>
-    <!-- Cards Section-->
-    <section>
+    <!-- End Carousel video -->
+    <!-- Start Cards Section-->
+    <section style ="background:#e1e1de;">
         <div class="container">
-            <div class="row gap-1 text-center ">
-                <div class="card" style="width: 18rem;">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row  text-center ">
+                <div class="card col-sm-4 " style="width: 18rem;">
                     <img src="assest/chair2.jpg" class="card-img-top" alt="chair" >
                     <div class="card-body">
                        <p class="card-text">Some quick example text to build on the card title and make.</p>
                     </div>
                 </div>  
-                <div class="card" style="width: 18rem;">
+                <div class="card col-sm-4" style="width: 18rem;">
                     <img src="assest/chair1.jpg" class="card-img-top" alt="chair">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make.</p>
                     </div> 
                 </div> 
-                <div class="card" style="width: 18rem;">
+                <div class="card col-sm-4 " style="width: 18rem;">
                     <img src="assest/armchair.jpg" class="card-img-top" alt="chair">
                     <div class="card-body">Some quick example text to build on the card title and make.</p>
                     </div>
                 </div>  
-                <div class="card" style="width: 18rem;">
-                    <img src="assest/chair2.jpg" class="card-img-top" alt="chair" >
+                <div class="card col-sm-4" style="width: 18rem;">
+                    <img src="assest/chairs-2181968_1280.jpg" class="card-img-top" alt="chair" >
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make.</p>
                     </div> 
                 </div> 
-                <div class="card" style="width: 18rem;">
+                <div class="card col-sm-4" style="width: 18rem;">
                     <img src="assest/living-room.jpg" class="card-img-top" alt="chair" >
                     <div class="card-body">
                        <p class="card-text">Some quick example text to build on the card title and make.</p>
                     </div>
                 </div> 
-                <div class="card" style="width: 18rem;">
+                <div class="card col-sm-4 " style="width: 18rem;">
                     <img src="assest/furniture-table.jpg" class="card-img-top" alt="chair">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make.</p>
@@ -243,7 +263,54 @@
         </div>
     </section>
     <!-- End cards section -->
+    <!-- Contact US Section -->
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-start">Contact Us</h2>
+                    <h3>HAVE A QUESTION?</h3>
+                    <p>Lorem ipsum dolor sit amet consect ipsum.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 001 811200905</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@gmail.com</li>
+                    </ul>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" aria-label="email" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-dark" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27622.175214166688!2d31.356000750000003!3d30.072072099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583df81720ed69%3A0xb597301dcb56aacf!2sCity%20Centre%20Almaza!5e0!3m2!1sen!2seg!4v1754823487716!5m2!1sen!2seg" width="500" height="350" class="border border-secondary rounded-top" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Start Footer -->
+    <footer class="bg-dark">
+        <div class="container p-2">
+            <div class="row">
+            <div class="text-sm-center">
+                <p style="color: rgb(247, 255, 255);">Copyright 2025 © Housedeco | Powered by <span style="color: #F8B259;">Sara Mohammed</span></p>
+                <!-- <ul>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-github-alt"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </ul> -->
+            </div>
+            
+                
+            </div>
+        </div>
+        </div>
+    </footer>
+
     
     <script src="styles/bootStrap5/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+ 
+</script>
 </body>
 </html>

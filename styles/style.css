@@ -1,42 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 :root{
-    --special-color: #e4bb7d;
+    --special-color: #F8B259;
     --primary-color: #1d1d1d;
     --secondary-color: #e1e1de;
+    --third-color: #A62C2C;
     --font-color: #ffff;
-    --font-size: 1.3rem;
+    --font-size: 1.4rem;
+    --font-size2: 1.1rem;
 }
-/* .landing{
-    background-image: url(../assest/building-landing.jpg); 
-    background-position: center center;
-    background-size: cover;
-} */
+
 .logo{
     color: var(--special-color);
     text-decoration: none;
     font-size: var(--font-size);
 }
+.nav-link {
+    color: var(--special-color);
+}
 header span{
     color: var(--special-color);
 }
-h1{
-    color: var(--font-color);
-    position: absolute;
-    right: 15%;
-    align-items: center;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: var(--bs-carousel-caption-color);
-    text-align: center;
+header .carousel-cap{
+    color: var(--primary-color);
 }
 section{
     margin: 20px 0;
     padding: 20px 0;
+}
+h2{
+    font-size: var(--font-size2);
 }    
-h2, h3{
+h3{
     color: var(--special-color);
     font-size: var(--font-size);
 }
-   
+ul{
+    list-style: none;
+}
+ul i{
+    color: #F8B259;
+    transition: all .3s ease-in;
+}  
+ul i:hover{
+    color: #B85C38;;
+} 
+.carousel-inner .carousel-item {
+  transition: -webkit-transform .5s ;
+  transition: transform .5s ;
+  transition: transform .5s, -webkit-transform .5s ;
+}
