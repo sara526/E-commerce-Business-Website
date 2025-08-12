@@ -1,6 +1,6 @@
- const carouselEl = document.getElementById('carouselVideoExample');
-  const carousel = new bootstrap.Carousel(carouselEl, { interval: false });
-  const videos = carouselEl.querySelectorAll('video');
+const carouselEl = document.getElementById('carouselVideoExample');
+const carousel = new bootstrap.Carousel(carouselEl, { interval: false });
+const videos = carouselEl.querySelectorAll('video');
 
   videos.forEach(video => {
     video.removeAttribute('loop');
@@ -22,3 +22,4 @@
   });
 
   videos[0].play();
+  //for carouselVideo
