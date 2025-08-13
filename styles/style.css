@@ -8,13 +8,12 @@
     --special-color: #F8B259;
     --primary-color: #1d1d1d;
     --secondary-color: #e1e1de;
-    --third-color: #A62C2C;
     --font-color: #ffff;
     --font-size: 1.4rem;
     --font-size2: 1.1rem;
 }
 
-/* Main navbar */
+/* navbar */
 .navbar {
   background-color: #1c1c1c;
 }
@@ -43,16 +42,7 @@ h3{
     color: var(--special-color);
     font-size: var(--font-size);
 }
-ul{
-    list-style: none;
-}
-ul i{
-    color: var(--special-color);
-    transition: all .3s ease-in;
-}  
-ul i:hover{
-    color: #B85C38;
-} 
+
 /* carousel video */
 .carousel-inner .carousel-item {
   transition: -webkit-transform .5s ;
@@ -63,7 +53,16 @@ ul i:hover{
 .contact {
   background-color: #f8f8f8;
 }
-
+.contact ul{
+    list-style: none;
+}
+.contact ul i{
+    color: var(--special-color);
+    transition: all .3s ease-in;
+}  
+.contact ul i:hover{
+    color: #B85C38;
+} 
 .map-container {
   border: 2px solid #fff;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.226);
@@ -74,4 +73,20 @@ ul i:hover{
 
     }
     
- }
+}
+/* Footer style */
+footer ul {
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    color: #ffff;
+    cursor: pointer;
+}
+footer ul li a{
+    transition: .5s ease-in-out;
+}
+footer ul li a:hover{
+    color: var(--special-color);
+    zoom: 1.2;
+}
