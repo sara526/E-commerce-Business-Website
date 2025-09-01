@@ -3,12 +3,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    
 }
 :root{
     --special-color: #F8B259;
     --primary-color: #1d1d1d;
     --secondary-color: #e1e1de;
-    --font-color: #ffff;
+    --font-color: #ffffff;
     --font-size: 1.4rem;
     --font-size2: 1.1rem;
 }
@@ -20,57 +22,101 @@
 
 .navbar-brand {
   color: #d4af7a;
+  font-size: 1.2rem;
 }
 
 .nav-link {
     color: var(--special-color);
+    transition: color .3s ease-in;
+    font-size: 1rem;
+}
+.nav-link:hover {
+    color: #ffffff; 
 }
 header span{
     color: var(--special-color);
 }
 header .carousel-cap{
     color: var(--primary-color);
+    background: rgba(255,255,255,0.7); 
+    padding: 0.3rem 0.6rem; 
+    border-radius: 0.4rem; 
 }
 section{
-    margin: 20px 0;
-    padding: 20px 0;
+    margin: 1.25rem 0; 
+    padding: 1.25rem 0; 
 }
+/*  تنسيق الصور داخل السكشن */
+.about img,
+.container img {
+  object-fit: cover; 
+  border-radius: 0.6rem; 
+}
+@media (min-width: 768px) {
+  .container img {
+    max-height: 18rem; 
+  }
+}
+@media (min-width: 1200px) {
+  .container img {
+    max-height: 22rem; 
+  }
+}
+
 h2{
     font-size: var(--font-size2);
+     color: var(--primary-color); 
 }    
 h3{
     color: var(--special-color);
     font-size: var(--font-size);
+    margin-bottom: 0.6rem;
 }
 
 /* carousel video */
 .carousel-inner .carousel-item {
-  transition: -webkit-transform .5s ;
-  transition: transform .5s ;
-  transition: transform .5s, -webkit-transform .5s ;
+    transition: transform .5s, -webkit-transform .5s; 
+ 
 }
 /* Contact style */
 .contact {
   background-color: #f8f8f8;
+  padding: 2rem 1.25rem; 
+  border-radius: 0.5rem; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  gap: 1.25rem; 
 }
 .contact ul{
     list-style: none;
+    padding-left: 0;
 }
 .contact ul i{
     color: var(--special-color);
+    font-size: 1.2rem;
     transition: all .3s ease-in;
 }  
 .contact ul i:hover{
     color: #B85C38;
+    transform: scale(1.2);
 } 
 .map-container {
-  border: 2px solid #fff;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.226);
+    width: 100%;
+    margin: auto;
+    border: 2px solid #fff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
 }
  @media only screen and (max-width: 600px){
-    div .about{
+    .about{
         width: 100%;
+        text-align: center;
 
+    }
+    .contact {
+        flex-direction: column;
+        align-items: center;
     }
     
 }
@@ -88,5 +134,5 @@ footer ul li a{
 }
 footer ul li a:hover{
     color: var(--special-color);
-    zoom: 1.2;
+    transform: scale(1.6); 
 }
